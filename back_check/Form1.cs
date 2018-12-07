@@ -33,7 +33,6 @@ namespace back_check
         private void button1_Click(object sender, EventArgs e)
         {
             Process[] processes = Process.GetProcessesByName(exeName);
-            textBox1.Text += processes.Length;
             if (processes.Length == 0)
             {
                open_p(null,null);             
@@ -42,7 +41,7 @@ namespace back_check
 
         private void open_p(object sender, EventArgs e)
         {                  
-          System.Diagnostics.Process.Start(@"C:\\Users\\COM\\source\\repos\\Local_UI_2nd\\WindowsFormsApp1\\bin\\Release\\WindowsFormsApp1.exe");            
+          System.Diagnostics.Process.Start(@"C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\StartUp\\WindowsFormsApp1.exe");            
         }
     }
    
